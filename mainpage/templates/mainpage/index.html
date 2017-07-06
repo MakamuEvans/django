@@ -1,0 +1,10 @@
+<ol>
+<h5>Welcome</h5>
+    {% for album in all_albums %}
+    <li>
+        <a href="/home/{{ album.id }}">
+            {{ album.album_title  }}
+        </a>
+    </li>
+    {% endfor %}
+</ol>
